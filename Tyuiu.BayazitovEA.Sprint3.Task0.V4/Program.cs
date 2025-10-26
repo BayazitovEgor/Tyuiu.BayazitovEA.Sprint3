@@ -6,7 +6,7 @@ internal class Program
         DataService ds = new DataService();
 
         int startValue = 1;
-        int stopValue = 8;
+        int stopValue = 7;
 
         Console.WriteLine( ds.GetMultiplySeries(startValue, stopValue));
 

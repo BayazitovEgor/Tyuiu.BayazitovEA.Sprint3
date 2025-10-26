@@ -7,7 +7,7 @@ namespace Tyuiu.BayazitovEA.Sprint3.Task0.V4.Lib
         {
             double multiplySeries = 1; ;
             int i;
-            for (i = startValue; i < stopValue; i++)
+            for (i = startValue; i <= stopValue; i++)
             {
                 multiplySeries = multiplySeries * (Math.Sin(0.1) + i);
             }
