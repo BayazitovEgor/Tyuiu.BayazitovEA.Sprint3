@@ -16,7 +16,7 @@ namespace Tyuiu.BayazitovEA.Sprint3.Task3.V12.Test
 
             double res = ds.GetMaxCharCount(value, item);
 
-            double wait =7;
+            double wait =3;
 
             Assert.AreEqual(wait, res);
         }

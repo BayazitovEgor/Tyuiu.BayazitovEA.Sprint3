@@ -5,13 +5,25 @@ namespace Tyuiu.BayazitovEA.Sprint3.Task3.V12.Lib
     {
         public int GetMaxCharCount(string value, char item)
         {
-            int count = 0;
-            foreach (char chr in value)
+            int maxConsecutiveK = 0;
+            int currentConsecutiveK = 0;
+            foreach (char c in value)
             {
-                if (chr == item)
-                { count++; }
+                if (c == item)
+                {
+             
+                    currentConsecutiveK++;
+                    if (currentConsecutiveK > maxConsecutiveK)
+                    {
+                        maxConsecutiveK = currentConsecutiveK;
+                    }
+                }
+                else
+                {
+                    currentConsecutiveK = 0;
+                }
             }
-            return count;
+            return maxConsecutiveK;
         }
             
     }
