@@ -15,8 +15,10 @@ namespace Tyuiu.BayazitovEA.Sprint3.Task7.V8.Lib
 
             for (int x = startValue; x <= stopValue; x++)
             {
+                if (x == 2) { results[count] = 0; }
                 y = Math.Round((Math.Sin(x) + (Math.Cos(x) + 1) / (2 - x) + 2 * x), 2);
                 results[count] = y;
+                if (x == 2) { results[count] = 0; }
                 count++;
             }
 
